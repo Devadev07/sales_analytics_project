@@ -80,7 +80,7 @@ def clean(df: pd.DataFrame) -> pd.DataFrame:
     df["Shipping Days"] = (df["Ship Date"] - df["Order Date"]).dt.days
 
     # 7. Strip stray whitespace from text fields.
-    text_cols = df.select_dtypes(include="object").columns
+    text_cols = df.select_dtypes(include=["object", "string"]).columns
     for col in text_cols:
         df[col] = df[col].str.strip()
 
