@@ -1,7 +1,7 @@
 import pandas as pd
 
-# Load dataset
-df = pd.read_csv("data/superstore.csv")
+# Load the CLEANED dataset (run src/clean_data.py first to generate it)
+df = pd.read_csv("data/superstore_clean.csv", parse_dates=["Order Date", "Ship Date"])
 
 # KPIs
 total_sales = df["Sales"].sum()
