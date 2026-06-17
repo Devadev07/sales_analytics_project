@@ -1,11 +1,17 @@
 # Power BI Dashboard — Build Guide
 
+> ✅ **Status: built.** The finished dashboard is saved as
+> [`sales_dashboard.pbix`](sales_dashboard.pbix) and a preview is in
+> [`charts/powerbi_dashboard.png`](charts/powerbi_dashboard.png).
+> This guide documents how it was built and how to reproduce it.
+
 This guide walks you through building the dashboard on **your own machine** (Power BI
 Desktop is Windows-only, so it can't run in this repo's environment). Everything it
 needs is already prepared: just point Power BI at **`data/superstore_clean.csv`**.
 
-By the end you'll have a 1-page interactive dashboard you can screenshot into
-`charts/` and reference on your CV and LinkedIn.
+The result is a 1-page interactive dashboard: 3 KPI cards (revenue, profit, margin),
+a monthly revenue trend line, a Top-10 products bar chart, a sales-by-region donut,
+and a Category slicer for cross-filtering.
 
 ---
 

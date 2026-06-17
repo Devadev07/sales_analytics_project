@@ -3,6 +3,11 @@
 End-to-end retail sales analytics pipeline on the Superstore dataset:
 **clean raw data with Python/Pandas → query it with SQL → visualize it in Power BI.**
 
+## Dashboard
+The finished interactive Power BI dashboard ([`sales_dashboard.pbix`](sales_dashboard.pbix)):
+
+![Power BI Sales Dashboard](charts/powerbi_dashboard.png)
+
 ## Tech Stack
 - **Python** (Pandas, NumPy) — data cleaning & transformation
 - **SQLite / SQL** — business queries (window functions, CTEs, aggregations)
