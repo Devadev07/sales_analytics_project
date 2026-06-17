@@ -1,10 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("data/superstore.csv")
-
-# Convert date
-df["Order Date"] = pd.to_datetime(df["Order Date"])
+# Load the CLEANED dataset (run src/clean_data.py first to generate it)
+df = pd.read_csv("data/superstore_clean.csv", parse_dates=["Order Date", "Ship Date"])
 
 # Monthly Sales
 monthly_sales = (
